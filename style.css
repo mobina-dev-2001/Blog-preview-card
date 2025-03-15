@@ -1,0 +1,171 @@
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+
+    --ff-primary: 'Figtree', sans-serif;
+
+    --fw-500: 500;
+    --fw-800: 800;
+}
+
+::selection {
+    background-color: var(--yellow);
+    color: var(--gray-950);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin-block-end: 0;
+}
+
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+    line-height: 1.1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-wrap: balance;
+}
+
+a:not([class]) {
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    color: currentColor;
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+textarea:not([rows]) {
+    min-height: 10em;
+}
+
+:target {
+    scroll-margin-block: 5ex;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background-color: var(--yellow);
+    color: var(--gray-950);
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-500);
+}
+
+.wrapper {
+    max-width: 385px;
+    padding: 1.5rem;
+    background-color: var(--white);
+    border: 2px solid var(--gray-950);
+    border-radius: 20px;
+    -webkit-box-shadow: 7px 7px 0px 0px var(--gray-950);
+    -moz-box-shadow: 7px 7px 0px 0px var(--gray-950);
+    box-shadow: 7px 7px 0px 0px var(--gray-950);
+}
+
+.image-container img {
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+}
+
+.category {
+    width: fit-content;
+    padding: .25rem .85rem;
+    background-color: var(--yellow);
+    border-radius: 4px;
+    font-size: .85rem;
+    font-weight: var(--fw-800);
+}
+
+.publish-date {
+    margin-top: .75rem;
+    font-size: .87rem;
+    font-weight: var(--fw-500);
+}
+
+.title {
+    margin-block: 1rem;
+    font-size: .76rem;
+    font-weight: var(--fw-800);
+    transition: all 200ms ease-in;
+}
+
+.title:hover,
+title:active {
+    color: var(--yellow);
+}
+
+.description {
+    margin-bottom: 1.3rem;
+    color: var(--gray-500);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: .65rem;
+}
+
+.author img {
+    width: 2rem;
+    aspect-ratio: 1;
+}
+
+.author p {
+    font-size: .9rem;
+    font-weight: var(--fw-800);
+}
