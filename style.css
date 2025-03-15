@@ -107,10 +107,10 @@ body {
 }
 
 .wrapper {
-    max-width: 385px;
+    max-width: 383px;
     padding: 1.5rem;
     background-color: var(--white);
-    border: 2px solid var(--gray-950);
+    border: 1px solid var(--gray-950);
     border-radius: 20px;
     -webkit-box-shadow: 7px 7px 0px 0px var(--gray-950);
     -moz-box-shadow: 7px 7px 0px 0px var(--gray-950);
@@ -126,7 +126,7 @@ body {
     width: fit-content;
     padding: .25rem .85rem;
     background-color: var(--yellow);
-    border-radius: 4px;
+    border-radius: 5px;
     font-size: .85rem;
     font-weight: var(--fw-800);
 }
